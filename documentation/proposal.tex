@@ -3,17 +3,34 @@
 \usepackage{geometry}
 \geometry{left = 1.5in, right = 1.25in, top = 1.25in, bottom = 1.25in}
 \usepackage{graphicx}
+\usepackage{times}
+\renewcommand{\baselinestretch}{1.5}
+\setlength{\parskip}{18pt}
+\usepackage{titlesec}
+% \renewcommand{\thesection}{Chapter \arabic{section}:}
+% \renewcommand{\thesubsection}{\arabic{section}.\arabic{subsection}}
+% \renewcommand{\thesubsubsection}{\arabic{section}.\arabic{subsection}.\arabic{subsubsection}}
+% \renewcommand{\theparagraph}{\arabic{section}.\arabic{subsection}.\arabic{subsubsection}.\arabic{paragraph}}
+\titleformat{\section}{\bfseries\fontsize{16pt}{18pt}\selectfont}{\thesection}{1em}{}
+\titleformat{\subsection}{\bfseries\fontsize{14pt}{16pt}\selectfont}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}{\bfseries\fontsize{13pt}{15pt}\selectfont}{\thesubsubsection}{1em}{}
+\titleformat{\paragraph}{\bfseries\fontsize{12pt}{14pt}\selectfont}{\theparagraph}{1em}{}
+\setcounter{secnumdepth}{4}
+\setcounter{tocdepth}{4}
+\usepackage{tocloft}
+\renewcommand{\contentsname}{Table of Contents}
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
 
 \title{
 \textbf{
     Kathmandu University \\
     \large{Department of Artificial Intelligence}\\
-    \normalsize{Panchkhal, Kavre}\\[2cm]}
-    \includegraphics[width=3cm]{KU-Logo.png}\\[2cm]
+    \normalsize{Panchkhal, Kavre}\\[1.5cm]}
+    \includegraphics[width=3cm]{KU-Logo.png}\\[1cm]
     \normalsize{A Project Proposal\\on\\
     \textbf{"Data Compression using Deep Learning"}}\\[0.5cm]
     \normalsize{[Code No.: AISP 301]\\
-    (For partial fulfillment of III/I Year/Semester in Artificial Intelligence)}\\[2cm]
+    (For partial fulfillment of III/I Year/Semester in Artificial Intelligence)}\\[1cm]
 }
 
 \author[ ]{\normalsize{
@@ -23,19 +40,18 @@
         Yajjyu Tuladhar(Roll no. 27)
 }}
 
-\affil[ ]{\vspace{1.5cm}}
+\affil[ ]{\vspace{0.3cm}}
 \affil[ ]{\normalsize{
         Submitted to: \linebreak
         Subodh Acharya \linebreak
         Department of Artificial Intelligence
 }}
-\affil[ ]{}
 
 \date{\normalsize{Submission Date: \today}}
 
 \begin{document}
 
-\newgeometry{margin = 1in}
+\newgeometry{margin = 0.5 in}
 \maketitle
 \thispagestyle{empty}
 \restoregeometry
@@ -44,21 +60,62 @@
 \setcounter{page}{1}
 \pagenumbering{roman}
 
-\section{Introduction}
-Provide a brief background and the motivation for the project. Explain why the project is important and what problem it aims to solve.
+\section*{Bonafide Certificate}
+\addcontentsline{toc}{section}{\textit{Bonafide Certificate}}
+\newpage
 
-\section{Objectives}
-List the main objectives of the project in bullet points:
+\section*{Abstract}
+\addcontentsline{toc}{section}{\textit{Abstract}}
+\newpage
+
+\addcontentsline{toc}{section}{\textit{Table of Contents}}
+\tableofcontents
+\newpage
+
+\section*{List of Figures}
+\addcontentsline{toc}{section}{\textit{List of Figures}}
+\newpage
+
+\section*{List of Tables}
+\addcontentsline{toc}{section}{\textit{List of Tables}}
+\newpage
+
+\section*{Acronyms/Abbreviations}
+\addcontentsline{toc}{section}{\textit{Acronyms/Abbreviations}}
+\newpage
+
+\setcounter{page}{1}
+\pagenumbering{arabic}
+
+\section{Introduction}
+\subsection{Background}
+
+\subsection{Objectives}
 \begin{itemize}
     \item Objective 1
     \item Objective 2
     \item Objective 3
 \end{itemize}
 
-\section{Methodology}
-Describe the methods and approach you will use to achieve the objectives. Include details about tools, technologies, or frameworks involved.
+\subsection{Motivation and Significance}
+\newpage
 
-\section{Expected Outcomes}
-Outline the expected results and impact of the project.
+\section{Related Works}
+\newpage
+
+\section{Design and Implementation}
+\newpage
+
+\section{Discussion on the Achievements}
+\newpage
+
+\section{Conclussion and Recommendation}
+\subsection{Limitations}
+\subsection{Future Enhancements}
+\newpage
+
+\section*{References}
+\addcontentsline{toc}{section}{\textit{References}}
+\newpage
 
 \end{document}
